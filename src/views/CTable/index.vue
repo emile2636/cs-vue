@@ -12,7 +12,7 @@ export default {
   computed: {
     renderData() {
       const start = (this.currentPage - 1) * 10;
-      const end = start + 10 - 1;
+      const end = start + 10;
       return this.dataList.slice(start, end);
     },
   },
@@ -63,10 +63,10 @@ export default {
 </template>
 <style scss scoped>
 .table-container {
-  width: 100vw;
+  width: 100%;
   font-size: 12px;
 }
 table {
-  width: 100vw;
+  width: 100%;
 }
 </style>
